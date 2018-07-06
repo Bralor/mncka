@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+		<style>.cs-menuFood.cs-menuFood-images .menu-image {padding-left: 0;}
+.cs-menuFood.cs-menuFood-images .menu-content {padding-left: 0;padding-right: 0;}
+.cs-menuFood.cs-menuFood-images .cs-menuFood-footer .feature-icon span { margin-top: 20px;}
+@media (max-width: 1200px) {
+    .cs-latestEvents .cs-eventHeader .css-eventDes,
+    .cs-transformEvents .cs-eventHeader .css-eventDes {
+        font-size: 13px;
+    }
+    .csbody .cshero-menu-dropdown > ul > li > a, .csbody .menu-pages .menu > ul > li > a {
+        padding: 0 10px !important;
+        font-size: 12px;
+    }
+}
+.cs-carousel-events-container .cs-carousel-events-header img {
+    width: 100%;
+}
+.cshero-menu-dropdown > ul > li > a {text-transform: uppercase}</style>	<style type="text/css">
+    /* =========================================================
+        Reset Body
+    ========================================================= */
+    body.csbody {
+        color: #888;
+        font-size: 14px;
+    }
+    #header-top .shopping_cart_dropdown,
+    #header-top .shopping_cart_dropdown a {
+        color: #888 !important;
+    }
+                .csbody:not(.home) #primary {
+            margin: 0px 13px 0px 13px;
+        }
+        .csbody a {
+        color: #c79c60;
+    }
+    .csbody a:hover, .csbody a:focus {
+        color: #a37b44;
+    }
+    .csbody a.read-more-link, .csbody th a {
+        color: #a37b44;
+    }
+    .csbody a.read-more-link:hover, .csbody th a:hover {
+        color: #c79c60 !important;
+    }
+    .color-primary,
+    .fc-toolbar .fc-left button:hover,
+    .fc-toolbar .fc-right button:hover {
+        color: #c79c60;
+    }
+    .cs-introlist .cs-introlist-image:hover .cs-introlist-title h3 {
+        background: #c79c60;
+    }
+    /* =========================================================
+        End Reset Body
+    ========================================================= */
+    /* =========================================================
+        Start Typo
+    ========================================================= */
+    body h1 {
+       font-size: 50px;
+       color: #c79c60;
+    }
+    body h2 {
+       font-size: 26px;
+       color: #333333;
+    }
+    body h3  {
+        font-size: 20px;
+        color: #333333;
+    }
+    body h4 {
+       font-size: 18px;
+       color: #333333;
+    }
+    body h5 {
+       font-size: 12px;
+       color: #333333;
+    }
+    body h6 {
+       font-size: 11px;
+       color: #333333;
+    }
+    .page-title{
+        color: #ffffff;
+        font-size: 50px;
+    }
+    .page-title-style .page-title {
+        color: ;
+    }
+    #cs-breadcrumb-wrapper .cs-breadcrumbs {
+        line-height: 50px;
+    }
+    .cs-breadcrumbs, .cs-breadcrumbs a {
+        color:  !important;
+    }
+    .page-title-style .cs-breadcrumbs, .page-title-style .cs-breadcrumbs a {
+        color:  !important;
+    }
+    .cs-breadcrumbs a:hover {
+        color: #c79c60; !important;
+    }
+    .title-unblemished h3:before {
+        background: #333333;
+    }
+    /* =========================================================
+        End Typo
+    ========================================================= */
+    /* =========================================================
+        Start Header
+    ========================================================= */
+    /* Header Color Option */
+    #header-top {
+        background: #c79c60 !important;
+        color: #ffffff !important;
+    }
+    #header-top a {
+        color: #ffffff !important;
+    }
+    #header-top a:hover {
+        color: #a37b44 !important;
+    }
+    #header-sticky, #sticky-nav-wrap .main-menu > li.menu-item-has-children > a:after {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .sticky-header.fixed .cshero-logo img,
+    .csbody #cs-header-custom-bottom.fixed-top .cs-logo img {
+        height: 35px !important;
+    }
+    /*** Logo ***/
+    .header-wrapper .logo a {
+        padding: 0;
+    }
+    #cshero-header .logo a img {
+        max-height: 128px;
+    }
+    .menu-pages .menu > ul > li > a {
+        line-height: 128px;
+    }
+    #cs-header-custom-bottom {
+        height: 128px;
+    }
+    /*** End logo ***/
+    /*** Start Main Menu ***/
+            .main-menu > li:not(.menu-item-has-children):hover > a:before,
+    .menu-pages .menu > ul > li:hover > a:before,
+    .main-menu > li.current-menu-item > a:before,
+    .main-menu > li.current-menu-parent > a:before,
+    .main-menu > li.current_page_item > a:before,
+    .main-menu > li.current-menu-ancestor > a:before
+     {
+        border-color: transparent transparent #c79c60;
+        bottom: 45px;
+    }
+    .main-menu > li.menu-item-has-children:hover > a:before {
+        border-color: #c79c60 transparent transparent;
+        bottom: 45px;
+    }
+    .main-menu > li:not(.menu-item-has-children):hover > a:after,
+    .menu-pages .menu > ul > li >:hover a:after,
+    .main-menu > li.current-menu-item > a:after,
+    .main-menu > li.current-menu-parent > a:after,
+    .main-menu > li.current_page_item > a:after,
+    .main-menu > li.current-menu-ancestor > a:after {
+        background: #c79c60;
+        bottom: 43px;
+    }
+    .main-menu > li.current-menu-item.menu-item-has-children > a:after,
+    .main-menu > li.current-menu-parent.menu-item-has-children > a:after {
+        background: #c79c60 !important;
+        bottom: 43px;
+    }
+            #sticky-nav-wrap .main-menu > li:not(.menu-item-has-children):hover > a:before,
+    #sticky-nav-wrap .main-menu > li.current-menu-item > a:before,
+    #sticky-nav-wrap .main-menu > li.current-menu-parent > a:before,
+    #sticky-nav-wrap .main-menu > li.current-menu-ancestor > a:before,
+    #sticky-nav-wrap .main-menu > li.current_page_item > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li:not(.menu-item-has-children):hover > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-item > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-parent > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current_page_item > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-ancestor > a:before {
+        border-color: transparent transparent #c79c60;
+        bottom: 8.5px;
+    }
+    #sticky-nav-wrap .main-menu > li.menu-item-has-children:hover > a:before,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.menu-item-has-children:hover > a:before {
+        border-color: #c79c60 transparent transparent;
+        bottom: 8.5px;
+    }
+    #sticky-nav-wrap .main-menu > li:not(.menu-item-has-children):hover > a:after,
+    #sticky-nav-wrap .main-menu > li.current-menu-item > a:after,
+    #sticky-nav-wrap .main-menu > li.current-menu-parent > a:after,
+    #sticky-nav-wrap .main-menu > li.current-menu-ancestor > a:after,
+    #sticky-nav-wrap .main-menu > li.current_page_item > a:after,
+    #cs-header-custom-bottom.fixed-top .main-menu > li:not(.menu-item-has-children):hover > a:after,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-item > a:after,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-parent > a:after,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current-menu-ancestor > a:after,
+    #cs-header-custom-bottom.fixed-top .main-menu > li.current_page_item > a:after {
+        background: #c79c60;
+        bottom: 6.5px;
+        top: inherit;
+    }
+            .cshero-menu-dropdown > ul > li > a {
+        text-transform: uppercase;
+    }
+        .cshero-menu-dropdown > ul > li > a,
+    .menu-pages .menu > ul > li > a {
+        padding: 0 18px !important;
+        font-size: 13px;
+    }
+    .cshero-menu-dropdown > ul > li.menu-item-has-children:hover,
+    .menu-pages .menu > ul > li.menu-item-has-children:hover {
+        background: #f5f5f5;
+    }
+    .cshero-menu-dropdown > ul > li:after,
+    .menu-pages .menu > ul > li > a:after {
+        height: 13px;
+    }
+
+    .btn-navbar.navbar-toggle i:before {
+        font-size: 13px;
+    }
+    .cshero-menu-dropdown > ul > li.nomega-menu-item ul,
+    #sticky-nav-wrap .cshero-menu-dropdown > ul > li.nomega-menu-item ul,
+    .cshero-menu-dropdown li.nomega-menu-item > ul ul,
+    .cs_mega_menu #sticky-nav-wrap ul {
+        width: 210px;
+    }
+    .main-menu-left ul ul li a{
+        color: #999 !important;
+    }
+    .main-menu-left ul ul li a:hover{
+        color: #999 !important;
+    }
+            .cshero-menu-dropdown li.nomega-menu-item ul ul ul {
+            left: 210px !important;
+        }
+        .cshero-menu-dropdown li.nomega-menu-item ul ul ul.back {
+            left: -210px !important;
+        }
+        .cshero-menu-dropdown > ul > li.mega-menu-item > ul > li > ul > li ul {
+      border-left: 3px solid #c79c60;
+    }
+        .main-menu-content, .main-menu > li.menu-item-has-children > a:after,
+    .main-menu > li.current_page_item.menu-item-has-children:before,
+    .main-menu > li.current-menu-item.menu-item-has-children:before {
+        background: #FFFFFF !important;
+    }
+
+            ul.main-menu > li > a, #sticky-nav-wrap ul > li > a,
+    .menu-pages .menu > ul > li > a,
+    .btn-navbar.navbar-toggle i:before {
+        color: #656565;
+    }
+    
+            #cshero-header.transparentFixed .main-menu > li > a {
+        color:#ffffff !important;
+    }
+    
+        #cshero-header.transparentFixed .main-menu > li:hover > a {
+        color:#ffffff !important;
+    }
+            .main-menu > li:hover > a,
+    .menu-pages .menu > ul > li:hover > a,
+    .main-menu > li.current-menu-item > a,
+    .main-menu > li.current-menu-ancestor > a,
+    .main-menu > li.current-menu-parent > a,
+    .main-menu > li.current_page_item > a,
+    #sticky-nav-wrap ul > li.current_page_item > a,
+    .btn-navbar.navbar-toggle:hover i:before {
+        color: #c79c60;
+    }
+    .main-menu > li.menu-item-has-children > a:hover,
+    .menu-pages .menu > ul > li.menu-item-has-children > a:hover,
+    .main-menu > li.current-menu-item.menu-item-has-children > a,
+    .main-menu > li.current-menu-parent.menu-item-has-children > a,
+    .main-menu > li.current_page_item.menu-item-has-children > a {
+        border-bottom: none;
+    }
+    .main-menu > li > a:hover:before,
+    .menu-pages .menu > ul > li > a:hover:before,
+    .main-menu > li.current-menu-item > a:before,
+    .main-menu > li.current-menu-parent > a:before,
+    .main-menu > li.current_page_item > a:before {
+      border-color: transparent transparent #c79c60;
+    }
+            .cshero-menu-dropdown > ul > li ul li,
+    .cshero-menu-dropdown > ul > li.mega-menu-item > ul {
+        background-color: #f5f5f5;
+    }
+    .cshero-menu-dropdown > ul > li > ul.mega-bg-image,
+    .cshero-menu-dropdown > ul > li > ul.mega-bg-image ul {
+        background-color: transparent;
+    }
+            .cshero-menu-dropdown > ul > li > ul li:hover,
+    .cshero-menu-dropdown > ul > li.mega-menu-item > ul > li > ul > li ul {
+        background-color: #f5f5f5;
+    }
+    .cshero-menu-dropdown > ul > li > ul.mega-bg-image li:hover {
+        /*background-color: transparent;*/
+    }
+            .cshero-menu-dropdown ul ul li a {
+        color: #999;
+        font-size: 13px;
+    }
+            .cshero-menu-dropdown li.nomega-menu-item ul li {
+        border-bottom: none;
+    }
+    .cshero-menu-dropdown li.mega-menu-item ul li {
+        /*border-bottom: 1px dashed #dcdcdc;*/
+        border-bottom: none;
+    }
+        .cshero-menu-dropdown li.nomega-menu-item ul li a {
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .cshero-menu-dropdown > ul > li.mega-menu-item > ul.colimdi > li > a {
+        color: #a37b44;
+    }
+    .cshero-menu-dropdown > ul > li ul li a:before {
+      border-color: transparent transparent transparent #c79c60;
+    }
+
+    /*** End Main Menu ***/
+    /*** Start Main Menu Sticky ***/
+    .sticky-header-left .main-menu-left ul ul li a{
+        color: #999 !important;
+    }
+    .sticky-header.fixed .cshero-menu-dropdown > ul > li > a,
+    .sticky-header.fixed .menu-pages .menu > ul > li > a,
+    .csbody #cs-header-custom-bottom.fixed-top .main-menu > li > a,
+    #cs-header-custom-bottom.fixed-top {
+        height: 55px;
+        line-height: 55px;
+    }
+    .csbody #cs-header-custom-bottom.fixed-top .cs-logo a {
+        line-height: 55px !important;
+        padding: 0 !important;
+    }
+    #sticky-nav-wrap ul > li.current-menu-item > a,
+    #sticky-nav-wrap ul > li.current_page_item > a,
+    #sticky-nav-wrap ul > li:hover > a {
+        color: #c79c60 !important;
+    }
+    #sticky-nav-wrap ul > li.menu-item-has-children:hover {
+        background: #f5f5f5;
+    }
+    #sticky-nav-wrap ul > li > a {
+        color: #656565 ;
+    }
+    .sticky-menu .cshero-menu-dropdown ul ul li:hover,
+    .sticky-menu .cshero-menu-dropdown > ul > li.mega-menu-item > ul > li > ul > li ul {
+        background-color: #f5f5f5 !important;
+    }
+    .sticky-menu .cshero-menu-dropdown li.nomega-menu-item ul li {
+        border-bottom: none;
+    }
+    .sticky-menu .cshero-menu-dropdown ul ul li a {
+        color: #999;
+    }
+    /*** End Main Menu Sticky ***/
+    /***** Mega Menu ****/
+    .cshero-menu-dropdown > ul > li ul {
+        border-bottom: 5px solid #c79c60;
+    }
+    #cs-header-custom-bottom.menu-up .cshero-menu-dropdown > ul > li ul {
+        border-bottom: none;
+        border-top: 5px solid #c79c60;
+    }
+    .cs_mega_menu li.mega-menu-item > ul {
+        border-bottom: 9px solid #c79c60;
+    }
+    #wp-consilium.meny-top .control .cs_close {
+        border-bottom: 1px solid #c79c60;
+    }
+    /* =========================================================
+        End Header
+    =========================================================*/
+
+    /* =========================================================
+        Start Primary
+    =========================================================*/
+        .content-area form {
+        background-color: #ffffff;
+    }
+            .content-area form {
+        color: #333333;
+    }
+            .content-area form {
+        border-color: #d2d2d2;
+    }
+        /* Content Area */
+    .content-area {
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0px 13px 0px 13px !important;
+    }
+    /* =========================================================
+        End Primary
+    =========================================================*/
+    /* =========================================================
+        Blog Post
+    =========================================================*/
+    .cs-blog-info {
+        background: #c79c60;
+    }
+    .cs-blog-title h3, .cs-blog-info li a:hover {
+        color: #c79c60;
+    }
+    .tag-sticky .cs-blog .cs-blog-header .cs-blog-thumbnail:before,
+    .sticky .cs-blog .cs-blog-header .cs-blog-thumbnail:before {
+        border-color: #c79c60 transparent transparent #c79c60;
+    }
+    .rtl .tag-sticky .cs-blog .cs-blog-header .cs-blog-thumbnail:before,
+    .rtl .sticky .cs-blog .cs-blog-header .cs-blog-thumbnail:before {
+        border-color: #c79c60 #c79c60 transparent transparent;
+    }
+    .rtl .cs-blog .cs-blog-info li + li {
+        border-left: none;
+        border-right: 1px solid #a37b44;
+    }
+    /* =========================================================
+        End Blog Post
+    =========================================================*/
+    /* =========================================================
+        Start Title and Module
+    =========================================================*/
+    .title-preset2 h3 {
+        color: #a37b44;
+    }
+    .title-preset1 h3, .title-style-colorprimary-retro h3,
+    .title-style-colorprimary-retro2 h3,  {
+        color: #c79c60 !important;
+    }
+    /* =========================================================
+        End Title Module
+    =========================================================*/
+    /* ==========================================================================
+    Start Sidebar Styles
+    ========================================================================== */
+    h3.comments-title span, .cs-menuFood .cs-menuFood-header h3.cs-post-title a,
+    #primary-sidebar .wg-title .title-line, h3.comment-reply-title span,
+    .cs-menuFood.cs-menuFood-images .cs-menuFood-header h3.cs-post-title {
+        border-bottom: 2px solid #c79c60;
+    }
+    /* ==========================================================================
+    End Sidebar Styles
+    ========================================================================== */
+
+    /* =========================================================
+        Start Page Inner Primary
+    =========================================================*/
+    article.team, .single-portfolio .cs-portfolio-meta, .cs-pricing .cs-pricing-item h3.cs-pricing-title{
+        background: #a37b44;
+    }
+
+    /* =========================================================
+        End Page Inner Primary
+    =========================================================*/
+    /**** RGBA ****/
+    .cs-portfolio .cs-portfolio-item:hover .cs-portfolio-details,
+    .cs-portfolio.cs-portfolio-style3 .cs-mainpage:hover:before {
+        background: rgba(199, 156, 96, 0.8);
+    }
+    .cs-recent-post.style-3 .cs-recent-post-title a {
+       background: rgba(163, 123, 68, 0.6);
+    }
+    .wpb_row.vc_row-fluid.bg-overlay-preset:before {
+        background: rgba(163, 123, 68, 0.9);
+    }
+    /**** End RGBA ****/
+    /* =========================================================
+        Start Button Style
+    =========================================================*/
+    .csbody  button, .csbody .button, .csbody .btn,
+    .csbody input[type="submit"],
+    .csbody #submit,
+    .csbody .added_to_cart,
+    a.comment-reply-link {
+                    background-color: #c79c60;
+                            color: #fff;
+                            border-color: #a37b44;
+                            border-width: 3px;
+                            border-style: solid;
+                            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+                            border-top: none!important;
+                            border-left: none!important;
+                                    border-right: none!important;
+                                    padding: 12px 14px 9px 14px;
+            }
+    .csbody .btn:hover,
+    .csbody .btn:focus,
+    .csbody .button:hover,
+    .csbody button:hover,
+    .csbody .button:focus,
+    .csbody button:focus,
+    .csbody input[type="submit"]:hover,
+    .csbody input[type="submit"]:focus,
+    .csbody #submit:hover,
+    .csbody #submit:focus,
+    .csbody .added_to_cart:hover,
+    .csbody .added_to_cart:focus,
+    a.comment-reply-link:hover,
+    a.comment-reply-link:focus {
+                    background-color: #a37b44;
+                            color: #fff;
+                            border-color: #a37b44;
+            }
+    .csbody .btn.btn-readmore {
+                    border-left: 3px solid #a37b44 !important;
+                border-bottom: none;
+    }
+    .csbody .btn.btn-readmore:hover {
+        background: #c79c60;
+    }
+    .csbody .btn.btn-default {
+        border-color: #a37b44;
+    }
+    .csbody .btn.btn-default-alt {
+        background: transparent;
+        border: 2px solid #a37b44 !important;
+        color: #a37b44;
+    }
+    .csbody .btn.btn-default-alt:hover,
+    .csbody .btn.btn-default-alt:focus {
+        color: #a37b44;
+        background: rgba(163, 123, 68, 0.3);
+    }
+    .csbody .btn.btn-primary {
+        border-color: #a37b44;
+        background: #c79c60;
+        color: #fff;
+    }
+    .csbody .btn.btn-primary:hover,
+    .csbody .btn.btn-primary:focus {
+        border-color: #a37b44;
+        background: #a37b44;
+        color: #fff;
+    }
+    .csbody .btn-primary-alt, .csbody input[type="submit"].btn-primary-alt {
+        background: transparent;
+        border: 2px solid #a37b44 !important;
+        color: #a37b44;
+    }
+    .csbody .btn-primary-alt:hover,
+    .csbody .btn-primary-alt:focus,
+    .csbody .btn-primary-alt-style2:hover,
+    .csbody .btn-primary-alt-style2:focus {
+        color: #a37b44!important;
+        background: rgba(163, 123, 68, 0.3)!important;
+    }
+    .csbody .btn.btn-trans:hover,
+    .csbody .btn.btn-trans:focus {
+        background: rgba(199, 156, 96, 0.3);
+    }
+    .csbody .btn.btn-trans:hover,
+    .csbody .btn.btn-trans:focus,
+    .csbody .cs-latest-twitter .bx-controls-direction a:hover {
+        background: #c79c60;
+    }
+    /* =========================================================
+        End Button Style
+    =========================================================*/
+    /* =========================================================
+        Start Short Code
+    =========================================================*/
+    /*** High light ***/
+    .cs-highlight-style-1 {
+         background: #c79c60;
+    }
+    .cs-highlight-style-2 {
+        background: #a37b44;
+    }
+    /**** Drop Caps ****/
+    .cs-carousel-post-read-more a,
+    .readmore.main-color {
+        color: #a37b44 !important;
+    }
+    .readmore.main-color:hover {
+        color: #c79c60 !important;
+    }
+    /* ==========================================================================
+      Start Comment
+    ========================================================================== */
+    #comments .comment-list .comment-meta a,
+    .cs-navigation .page-numbers {
+        color: #888;
+    }
+    .widget_categories ul li.cat-item a,
+    .widget_meta ul li a,
+    .widget_archive ul li a,
+    .widget_meta ul li a,
+    .widget_calendar #wp-calendar tbody td a,
+    .widget_pages ul li a {
+        color: #888;
+    }
+    .widget_calendar #wp-calendar tbody td:hover,
+    .widget_meta .heading + ul > li:hover,
+    .widget_meta .wg-title  + ul > li:hover,
+    .widget_categories .heading + ul > li.cat-item:hover,
+    .widget_categories .wg-title + ul > li.cat-item:hover,
+    .widget_meta .heading + ul ul li:hover,
+    .widget_meta .wg-title + ul ul li:hover,
+    .widget_categories .heading + ul ul li:hover,
+    .widget_categories .wg-title + ul ul li:hover {
+        background: #c79c60;
+    }
+    .widget_calendar #wp-calendar tbody td.pad {
+        background: transparent;
+    }
+    /** update category woo **/
+    /* ==========================================================================
+      End Comment
+    ========================================================================== */
+    /* ==========================================================================
+      Block Quotes
+    ========================================================================== */
+    blockquote {
+        border-left: 3px solid #c79c60 !important;
+    }
+    .rtl blockquote {
+        border-left: none;
+        border-right: 3px solid #c79c60;
+    }
+    .cs-quote-style-1:before, .cs-quote-style-3:before,
+    .cs-quote-style-1:after, .cs-quote-style-3:after {
+        color: #c79c60;
+    }
+    .cs-quote-style-3, .cs-quote-style-2 {
+        border-left: 10px solid #c79c60;
+    }
+    .rtl .cs-quote-style-3, .rtl .cs-quote-style-2 {
+        border-left: none;
+        border-right: 10px solid #c79c60;
+    }
+    /* =========================================================
+        End Short Code
+    =========================================================*/
+
+    /*Start All Style Widget WP*/
+    .tagcloud a:hover {
+        background: #c79c60;;
+    }
+    .primary-sidebar [class*="widget_"],
+    .primary-sidebar [class^="widget_"],
+    .primary-sidebar .widget {
+        border-bottom: 4px solid #c79c60;
+     }
+    /*End All Style Widget WP*/
+
+    .cs-blog-header h3.cs-blog-title a:hover, .cs-blog .cs-blog-info li,
+    .cs-team-content .cs-team-social a:hover i, .connect-width li a:hover i,
+    a.twitter_time, .cs-latest-twitter .cs-desc a,
+    .title-preset2 h3.ww-title, .title-preset2 h3.cs-title {
+        color: #a37b44 !important;
+    }
+    .cs-carousel-style-3 .cs-carousel-post-icon:hover:before {
+        background: #a37b44 !important;
+    }
+    /* =========================================================
+        Start Reset Input
+    =========================================================*/
+    input[type='text']:active,
+    input[type='text']:focus,
+    input[type="password"]:active,
+    input[type="password"]:focus,
+    input[type="datetime"]:active,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:active,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:active,
+    input[type="date"]:focus,
+    input[type="month"]:active,
+    input[type="month"]:focus,
+    input[type="time"]:active,
+    input[type="time"]:focus,
+    input[type="week"]:active,
+    input[type="week"]:focus,
+    input[type="number"]:active,
+    input[type="number"]:focus,
+    input[type="email"]:active,
+    input[type="email"]:focus,
+    input[type="url"]:active,
+    input[type="url"]:focus,
+    input[type="search"]:active,
+    input[type="search"]:focus,
+    input[type="tel"]:active,
+    input[type="tel"]:focus,
+    input[type="color"]:active,
+    input[type="color"]:focus,
+    textarea:focus {
+        border: 1px solid #c79c60 !important;
+    }
+    .navbar-toggle, .cs-team .cs-team-featured-img:hover .circle-border {
+        border: 1px solid #a37b44 !important;
+    }
+    .wpb_tabs li.ui-tabs-active a.ui-tabs-anchor {
+        border: 1px solid #c79c60 !important;
+    }
+    .tagcloud a:hover,
+    .post .cs-post-meta, .post .cs-post-header .date-type .date-box,
+    .cs-carousel-container .cs-carousel-header .cs-carousel-post-date,
+    .cs-carousel-style-2 .cs-carousel-post-icon,
+    .cs-carousel-style-2.cs-carousel-style-3 .cs-carousel-post-icon:before, .bg-preset,
+    .cs-carousel .carousel-control, .box-2, #cs_portfolio_filters ul li:hover a,
+    #cs_portfolio_filters ul li.active a, .gallery-filters a:hover, .gallery-filters a.active,
+    ul.cs_list_circle li:before, ul.cs_list_circleNumber li:before,
+    .cs-pricing .cs-pricing-item .cs-pricing-button:hover a,
+    .cs-blog .mejs-controls .mejs-time-rail .mejs-time-current, ins,
+    .cs-blog .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+    .cs-navigation .page-numbers:hover, .cs-navigation .page-numbers.current,
+   .cs-portfolio.cs-portfolio-style2 .cs-portfolio-header:hover .cs-portfolio-meta,
+    #wrapper .woocommerce .woocommerce-info:before, #wrapper .woocommerce-page .woocommerce-info:before,
+    .cs-recent-post.style-3 .cs-title, .title-line-bottom .wpb_wrapper > h3:before,
+    .cs-carousel-events-date, .cs-carousel-style-3 .cs-carousel-post-icon:before,
+    .cs-latestEvents .cs-eventHeader:before, .cs-transformEvents .cs-eventHeader:before,
+    .cs-latestEvents .cs-eventHeader:after, .cs-transformEvents .cs-eventHeader:after,
+    .cs-latestEvents .cs-eventHeader, .cs-transformEvents .cs-eventHeader,
+    input[type="radio"] + span:after, .cs-blog .date-box,
+    .csbody .xdsoft_datetimepicker .xdsoft_calendar td:hover,
+    .csbody .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover,
+    .modal-header .close span:hover,
+    .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+    .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current, .cs-contact-social li:hover i  {
+        background: #c79c60 !important;
+    }
+    .cs-transformEvents:hover .cs-eventHeader:before,
+    .cs-transformEvents:hover .cs-eventHeader:after,
+    .cs-transformEvents:hover .cs-eventHeader {
+        background: #a37b44 !important;
+    }
+    .cs-blog .mejs-controls .mejs-time-rail .mejs-time-loaded,
+    .cs-blog .mejs-controls .mejs-time-rail .mejs-time-total,
+    .cs-blog .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+        background: #a37b44;
+    }
+    .sh-list-comment .post-holder a:hover,
+    .post .cs-post-header .cs-post-title a:hover,
+    .cs-breadcrumbs ul.breadcrumbs li a:hover,
+    .logo-text strong:nth-child(1),
+    #cs_portfolio_filters ul li.active a,
+    .cs-carousel-body .cs-carousel-post-title h2.entry-title a:hover,
+    .cs-carousel-post .cs-nav a:hover i:before,
+    .cs-carousel-events .cs-nav a:hover i:before,
+    .cs-carousel-container .cs-carousel-details a i,
+    #footer-bottom ul.menu li a:hover, #footer-bottom ul.obtheme_mega_menu li a:hover,
+    ul.cs_list_number li:before,
+    .back-to-demo a:hover, .back-to-demo a:focus,
+    .cs-portfolio-item .cs-portfolio-details .cs-portfolio-meta h3, .cs-portfolio-item .cs-portfolio-list-details li a:hover,
+    .single-portfolio .cs-portfolio-item h5.title-pt, .cs-nav ul li:hover i,
+    .tools-menu i, .back-to-demo i, .tools-menu:hover, .back-to-demo:hover
+    .header-v7 #header-top h3.wg-title, .cs-eventCount-content #event_countdown span:nth-child(1),
+    input[type="checkbox"] + span:after, .cs-blog .cs-blog-quote .icon-left:before,
+    .cs-blog .cs-blog-quote .icon-right:after, .cs-menuFood.cs-menuFood-images.layout2 .price-food span  {
+        color: #c79c60 !important;
+    }
+    .single-portfolio .cs-portfolio-item .cs-portfolio-list-details li h5,
+    h1.entry-title, h3.wg-title, .cs-title,
+    .comment-body .fn, span.star, span.Selectoptions:after,
+    .cs-blog-media .carousel-control.left:hover,
+    .cs-blog-media .carousel-control.right:hover,
+    .single-team .cs-item-team .cs-team-social li:hover a,
+    blockquote > p:before, blockquote > p:after,
+    .meny-top .meny-sidebar .cs_close:before,
+    .meny-top .meny-sidebar .cs_close:hover:after,
+    .cs-carousel-event-style1 .cs-event-meta .cs-event-time i,
+    .cs-carousel-style-3 .cs-carousel-header-feature h3,
+    .cs-blog .cs-blog-header .cs-blog-title a:hover,
+    .cs-menuFood .cs-menuFood-header h3.cs-post-title a:hover {
+        color: #c79c60;
+    }
+    .cs-blog .mejs-container .mejs-controls .mejs-time span,
+    .cs-navigation .prev.page-numbers:before,
+    .cs-navigation .next.page-numbers:after,
+    .tweets-container ul li:before,
+    .cs-team .cs-title,
+    .cs-team.cs-team-style-1 .cs-team-title a {
+        color: #a37b44;
+    }
+    .cs-testimonial .cs-testimonial-header h3.cs-title {
+        color: #a37b44 !important;
+    }
+    /* =========================================================
+        Start Reset Input
+    =========================================================*/
+    /* ==========================================================================
+    Start carousel latest work style1
+    ========================================================================== */
+    .title-line .ww-title .line, .title-line .wg-title span,
+    .cs-carousel-post h3.cs-title span.line,
+    .cs-carousel-portfolio h3.cs-title span.line,
+    .cs-title .line {
+        -webkit-box-shadow: 0 1px 0 #c79c60;
+           -moz-box-shadow: 0 1px 0 #c79c60;
+            -ms-box-shadow: 0 1px 0 #c79c60;
+             -o-box-shadow: 0 1px 0 #c79c60;
+                box-shadow: 0 1px 0 #c79c60;
+    }
+    .cs-carousel-post .cs-carousel-header:hover:before,
+    .cs-carousel-portfolio .cs-carousel-header:hover:before {
+        background: rgba(199, 156, 96, 0.7);
+    }
+    .cs-carousel-post .cs-carousel-body h3.cs-carousel-title a,
+    .cs-carousel-post.cs-carousel-post-default2 h3.cs-carousel-title a,
+    .cs-carousel-post .cs-header .cs-title,
+    .cs-carousel-portfolio .cs-carousel-body h3.cs-carousel-title a,
+    .cs-carousel-portfolio.cs-carousel-post-default2 h3.cs-carousel-title a,
+    .cs-carousel-portfolio .cs-header .cs-title, .search .page-header .page-title,
+    .error404 .page-header .page-title {
+        color: #a37b44;
+    }
+    .cs-carousel-post.cs-carousel-post-default2.cs-style-retro h3.cs-carousel-title a,
+    .tp-leftarrow .tp-arr-allwrapper:before, .tp-rightarrow .tp-arr-allwrapper:before{
+        color: #c79c60;
+    }
+    ul.product-categories li a:hover {
+        color: #c79c60;
+    }
+    /* ==========================================================================
+    End carousel latest work style1
+    ========================================================================== */
+    /* =========================================================
+      Portfolio Details
+    =========================================================*/
+    .single-portfolio .cs-portfolio-item .cs-portfolio-details .cs-portfolio-meta ul.cs-social i:hover,
+    .cs-social li a:hover i,  {
+        color: #a37b44;
+    }
+    /* =========================================================
+      Menu Food
+    =========================================================*/
+
+    /* =========================================================
+        Start Footer
+    =========================================================*/
+    #footer-top {
+        background-color: #f5f5f5;
+        color: #999999;
+    }
+    #footer-top h3.wg-title {
+        color: #333333 !important;
+    }
+    #footer-top a {
+        color: #999999 !important;
+    }
+    #footer-top a:hover {
+        color: #c79c60 !important;
+    }
+
+    #footer-bottom {
+        background-color: #222222;
+        color: #888888;
+    }
+    #footer-bottom h3.wg-title {
+        color:  !important;
+    }
+    #footer-bottom a {
+        color: #888888 !important;
+    }
+    #footer-bottom a:hover {
+        color: #c79c60 !important;
+    }
+
+        #footer-top {
+        padding: 40px 0px;
+        margin: 0px 13px 0px 13px;
+    }
+            #footer-bottom {
+        padding: 14px 0;
+        margin: 0px 13px 13px 13px;
+    }
+        /* =========================================================
+        End Footer Top
+    =========================================================*/
+
+    /* ==========================================================================
+      Start Carousel For NUVO
+    ========================================================================== */
+    .cs-carousel-container .cs-carousel-details .cs-zoom-images a,
+    .cs-carousel-container .cs-carousel-details .cs-read-more a {
+        border: 1px solid #c79c60;
+    }
+    .cs-carousel-container .cs-carousel-details .cs-zoom-images a:hover,
+    .cs-carousel-container .cs-carousel-details .cs-read-more a:hover {
+        background: #c79c60;
+    }
+    .cs-menuFood-footer .feature-icon span {
+        border-color: transparent transparent #c79c60 #c79c60;
+    }
+    .rtl .cs-menuFood-footer .feature-icon span {
+        border-color: transparent #c79c60 #c79c60 transparent;
+    }
+    #header-top .shopping_cart_dropdown {
+        border-bottom: 5px solid #c79c60;
+    }
+    .widget_price_filter .price_slider_wrapper .button {
+        border: 2px solid #c79c60 !important;
+        color: #c79c60 !important;
+    }
+    .widget_price_filter .price_slider_wrapper .button:hover {
+        background: rgba(199, 156, 96, 0.3) !important;
+    }
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+    .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle,
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+    .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range {
+        background: #c79c60 !important;
+    }
+    /* ==========================================================================
+      End Carousel For NUVO
+    ========================================================================== */
+    .csbody .picker__day--today::before {
+        border-top: 0.5em solid #c79c60;
+    }
+    .csbody .picker__day--selected, .picker__day--selected:hover, 
+    .csbody .picker--focused .picker__day--selected {
+        background: #c79c60 !important;
+    }
+    .csbody .picker__day--highlighted {
+        border-color: #c79c60;
+    }
+    .csbody .picker__day--infocus:hover, .csbody .picker__day--outfocus:hover {
+        background: rgba(199, 156, 96, 0.8) !important;
+    }
+</style>
+<!--End Preset -->	<title>La Strada - Restaurant & Pizzeria - Brno | Lastrada</title>
+
+<!-- All in One SEO Pack 2.3.2.3 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="canonical" href="http://lastrada-brno.cz/poledni-menu/" />
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-3227157-1', 'auto');
+			
+			ga('send', 'pageview');
+			</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="Lastrada &raquo; RSS zdroj" href="http://lastrada-brno.cz/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lastrada &raquo; RSS komentářů" href="http://lastrada-brno.cz/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lastrada &raquo; RSS komentářů pro Polední menu" href="http://lastrada-brno.cz/poledni-menu/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/lastrada-brno.cz\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.6"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://lastrada-brno.cz/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='http://lastrada-brno.cz/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='http://lastrada-brno.cz/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.0.9' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-droid-serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='events-manager-css'  href='http://lastrada-brno.cz/wp-content/plugins/events-manager/includes/css/events_manager.css?ver=5.61' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://lastrada-brno.cz/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.93' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='nuvo-chill-style-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo-child/style.css?ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-body-font-family-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-header-font-family-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-other-font-family_0-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-other-font-family_2-css'  href='http://fonts.googleapis.com/css?family=Cabin%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-other-font-family_3-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-other-font-family_4-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-other-font-family_6-css'  href='http://fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='http://lastrada-brno.cz/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=4.6.2' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-ionicons-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/css/ionicons.min.css?ver=1.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-elements-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/css/cs-animate-elements.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/style.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/css/colorbox.css?ver=1.5.10' type='text/css' media='all' />
+<link rel='stylesheet' id='portfolio-css-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/framework/shortcodes/portfolio/portfolio.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='portfoliocarousel-consilium-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/framework/shortcodes/portfoliocarousel/css/portfoliocarousel-consilium.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='widget_cart_search_scripts-css'  href='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/framework/widgets/widgets.css?ver=4.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='http://lastrada-brno.cz/wp-content/plugins/js_composer/assets/css/js_composer.css?ver=4.6.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script><script>jQueryWP = jQuery;</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.0.9'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.0.9'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.0.9'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var EM = {"ajaxurl":"http:\/\/lastrada-brno.cz\/wp-admin\/admin-ajax.php","locationajaxurl":"http:\/\/lastrada-brno.cz\/wp-admin\/admin-ajax.php?action=locations_search","firstDay":"1","locale":"cs","dateFormat":"dd.mm.yy","ui_css":"http:\/\/lastrada-brno.cz\/wp-content\/plugins\/events-manager\/includes\/css\/jquery-ui.min.css","show24hours":"1","is_ssl":"","bookingInProgress":"Po\u010dkejte pros\u00edm, rezervace je odes\u00edl\u00e1na.","tickets_save":"Ulo\u017eit l\u00edstek\/vstupenku","bookingajaxurl":"http:\/\/lastrada-brno.cz\/wp-admin\/admin-ajax.php","bookings_export_save":"Exportovat rezervace","bookings_settings_save":"Ulo\u017eit nastaven\u00ed","booking_delete":"Jste si jisti smaz\u00e1n\u00edm?","bb_full":"Vyprod\u00e1no","bb_book":"rezervovat","bb_booking":"Rezervuji...","bb_booked":"Rezervace odesl\u00e1no","bb_error":"Rezervace chyba. Zkusit znovu?","bb_cancel":"zru\u0161it","bb_canceling":"Stornuji...","bb_cancelled":"Zru\u0161eno","bb_cancel_error":"Stornov\u00e1n\u00ed chyba. Zkusit znovu?","txt_search":"Vyhled\u00e1n\u00ed","txt_searching":"Vyhled\u00e1v\u00e1n\u00ed ...","txt_loading":"Nahr\u00e1v\u00e1m ...","event_reschedule_warning":"Jste si jisti, \u017ee chcete zm\u011bnit pl\u00e1n t\u00e9to opakuj\u00edc\u00ed se ud\u00e1losti? Pokud tak u\u010din\u00edte, ztrat\u00edte v\u0161echny informace o rezervac\u00edch a star\u00e9 opakuj\u00edc\u00ed se ud\u00e1losti budou smaz\u00e1ny.","event_detach_warning":"Jste si jisti, \u017ee chcete uvolnit tuto ud\u00e1lost? T\u00edm se tato ud\u00e1lost je nez\u00e1visl\u00e1 na opakuj\u00edc\u00ed soubor ud\u00e1lost\u00ed.","delete_recurrence_warning":"Jste si jisti, \u017ee chcete odstranit v\u0161echna opakov\u00e1n\u00ed t\u00e9to ud\u00e1losti? V\u0161echny ud\u00e1losti budou p\u0159esunuty do ko\u0161e.","disable_bookings_warning":"Jste si jisti, \u017ee chcete zak\u00e1zat rezervaci? Pokud tak u\u010din\u00edte a ulo\u017e\u00edte ji, p\u0159ijdete o v\u0161echny p\u0159edchoz\u00ed rezervace. Pokud chcete, aby se zabr\u00e1nilo dal\u0161\u00ed rezervaci, sni\u017ete po\u010det m\u00edst k dispozici k rezervaci","booking_warning_cancel":"Jste si jisti, \u017ee chcete zru\u0161it svou rezervaci?","locale_data":{"closeText":"Zav\u0159\u00edt","prevText":"<D\u0159\u00edve","nextText":"Pozd\u011bji>","currentText":"Nyn\u00ed","monthNames":["leden","\u00fanor","b\u0159ezen","duben","kv\u011bten","\u010derven","\u010dervenec","srpen","z\u00e1\u0159\u00ed","\u0159\u00edjen","listopad","prosinec"],"monthNamesShort":["led","\u00fano","b\u0159e","dub","kv\u011b","\u010der","\u010dvc","srp","z\u00e1\u0159","\u0159\u00edj","lis","pro"],"dayNames":["ned\u011ble","pond\u011bl\u00ed","\u00fater\u00fd","st\u0159eda","\u010dtvrtek","p\u00e1tek","sobota"],"dayNamesShort":["ne","po","\u00fat","st","\u010dt","p\u00e1","so"],"dayNamesMin":["ne","po","\u00fat","st","\u010dt","p\u00e1","so"],"weekHeader":"T\u00fdd","dateFormat":"dd.mm.yy","firstDay":1,"isRTL":false,"showMonthAfterYear":false,"yearSuffix":""}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/events-manager/includes/js/events-manager.js?ver=5.61'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.93'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var analytic = {"id":"UA-3227157-1","home":"http:\/\/lastrada-brno.cz"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/googleanalytic.js?ver=4.2.6'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/bootstrap.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/cs_parallax.js?ver=4.2.6'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/jquery_cookie.min.js?ver=4.2.6'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/main.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/jquery.easing.min.js?ver=1.3.1'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/jquery.nav.js?ver=3.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var one_page = {"scrollSpeed":"750","scrollOffset":"-203","easing":"jswing"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/custom-nav.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/sticky.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/framework/widgets/widgets.js?ver=4.2.6'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/framework/widgets/search.js?ver=4.2.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lastrada-brno.cz/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://lastrada-brno.cz/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.2.6" />
+<link rel='shortlink' href='http://lastrada-brno.cz/?p=1564' />
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = '02ca23a914';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://lastrada-brno.cz/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<link type="image/x-icon" href="http://lastrada-brno.cz/wp-content/uploads/2015/12/favicon.jpg" rel="shortcut icon"><style>body.csbody{background-color:#fff;  background-size:cover;  background-position:center center;  background-attachment:;  font-size:14px}#header-sticky ul.navigation > li > a,.logo-sticky a{line-height:55px}body #cshero-header{}@media (max-width:992px){.main-menu,.sticky-menu{display:none}.header-wrapper .btn-nav-mobile-menu{display:block}}.logo{text-align:left}.normal_logo{margin:0px;  padding:0}.logo-sticky{text-align:left;  margin:}.logo-sticky img{padding:}.cshero-menu-dropdown > ul > li > a{height:128px;  line-height:128px}.cshero-menu-dropdown > ul > li{padding-right:0 18px}.sticky-header{background:rgba(255,255,255,1)}.sticky-header .cshero-menu-dropdown > ul > li{padding-right:}.sticky-header .cshero-logo > a,.sticky-header .cshero-menu-dropdown > ul > li > a{display:block;  line-height:55px}@media (max-width:992px) and (min-width:768px){.sticky-wrapper{display:none}}@media (max-width:767px){.sticky-wrapper{display:none}}#footer-top{background-color:#f5f5f5}#cs-page-title-wrapper{background-color:#f5f5f5;  padding:50px 0;  border-color:#ffffff}.page-title-style .page-title{font-size:!important}.cs-breadcrumbs,.cs-breadcrumbs a{color:}body,.q_counter_holder span.counter,.cs-testimonial-header h3.cs-title,.cs-team .cs-header h3.cs-title,.wpb_accordion_section .wpb_accordion_header a,.q_counter_holder p.counter_text,h3.ww-title,h3.cs-title,.ww-subtitle,.cs-breadcrumbs a,.cs-breadcrumbs span,.home .ww-fancy-box.fancy-box-style-1 .ww-title-main,.cs-subtitle,.cs-desc,.logo-text,.logo-text strong:nth-child(2),.logo-text i,.cs-carousel-style-3 .cs-carousel-header-feature span,#primary-sidebar .wg-title,h3.comment-reply-title,.cs-eventCount-content h3.cs-eventCount-title{font-family:Open Sans !important}body h2,body h4,.cs-recent-post-v1 ul li a,.cs-fancy-box .cs-title-main,h3.cs-team-title,.cs-testimonial-content .cs-testimonial-title,.woocommerce-breadcrumb,.woocommerce-breadcrumb a,.product_title,cs-shopcarousel-style-1-shop h3.cs-title{font-family:Open Sans !important}h3.cs-pricing-title,th,th a,.widget_calendar #wp-calendar caption,.cs_separator_title h4,.meny-sidebar h3.wg-title,a.shipping-calculator-button,.cart-collaterals .cart_totals > h2,.woocommerce-billing-fields > h3,#ship-to-different-address > label,#order_review_heading{font-family:Open Sans !important}@font-face{font-family:'eurostile-webfont';   src:url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.eot');   src:url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.eot?#iefix') format('embedded-opentype'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.woff') format('woff'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.ttf') format('truetype'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.svg#eurostile-webfont') format('svg');   font-weight:normal;   font-style:normal}body h2,body h3,body h4,a.read-more-link,h3.title-main-body,.tab-holder ul.nav li a,.cs-popular .cs-meta .date,.cs-popular .cs-details > h4,.cs-popular .cs-details .readmore,.getTouchSidebar > li i,.cs-latest-twitter a i,strong,.cs-menuFood-content .price-food span,.cs-blog-quote .cs-blog-content .cs-content-text span.author,ul.textContact li .text-upper,.cs-menuFood-footer .description-icon span,.logo-text strong:nth-child(1),.cs-carousel-container .cs-carousel-header .cs-carousel-post-date,.cs-carousel-events-header .cs-carousel-post-date,.cs-carousel-events-date,.cs-blog .date-box .date span,.widget_categories .heading + ul li.cat-item:hover > a,.widget_categories .heading + ul ul li:hover > a,.widget_meta .heading + ul > li:hover > a,.comment-body .fn,.categories_list_post .date-box .date span,.cs-booking-form label,#primary-sidebar .wg-title .title-line,h3.comment-reply-title span,.cs-blog-events .cs-blog-eventsBooking a.btn,.cs-blog-events .cs-blog-eventsDate,.widget_categories .wg-title + ul li:hover > a,.widget_meta .wg-title + ul > li:hover > a{font-family:eurostile-webfont !important}.cs-eventCount-content #event_countdown span:nth-child(2){font-family:Cabin !important}body h5,body h6,.cs-testimonial-content .cs-title.cs-testimonial-category,#footer-top h3.wg-title,.cs-carousel-body .cs-carousel-post-title a,input[type='submit'],.btn,.button,button,.cs-carousel-events-body .cs-event-title .cs-carousel-event-title a,.cs-latestEvents .cs-eventBody .cs-eventContent > h3,code,kbd{font-family:Open Sans !important}.cs-navigation .page-numbers,.cs_call_to_action .wpb_call_text,a.read-more-link.btn{font-family:Open Sans !important}@font-face{font-family:'eurostile-webfont';   src:url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.eot');   src:url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.eot?#iefix') format('embedded-opentype'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.woff') format('woff'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.ttf') format('truetype'),url('http://lastrada-brno.cz/wp-content/themes/wp_nuvo/fonts/eurostile-webfont.svg#eurostile-webfont') format('svg');   font-weight:normal;   font-style:normal}body h1,.cs-carousel-event-style1 .cs-title,.cs-carousel-style-3 .cs-carousel-header-feature h3{font-family:eurostile-webfont !important}.demo{font-family:Lato !important}.sticky-header-left{background:#ffffff}.sticky-header-left:before,.sticky-header-left:after{border-bottom:122px solid #ffffff}.sticky-header-left .sticky-menu ul ul{background:#f5f5f5}.cshero-mmenu.navbar-collapse{background:#333333}.cshero-mmenu ul li a{color:#999999}.cshero-mmenu ul li a:hover,.cshero-mmenu ul li.current-menu-item a{color:#ffffff}.cshero-mmenu ul ul li a{color:#999999}.cshero-mmenu ul ul li a:hover,.cshero-mmenu ul ul li.current-menu-item a{color:#ffffff}h1{font-size:50px}h2{font-size:26px}h3{font-size:20px}h4{font-size:18px}h5{font-size:12px}h6{font-size:11px}</style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://lastrada-brno.cz/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1448547150173{margin-top: 0px !important;padding-top: 310px !important;padding-bottom: 310px !important;background-image: url(http://lastrada-brno.tretritest.cz/subdom/lastrada-brno/wp-content/uploads/2014/06/slider02filtr.jpg?id=2148) !important;}.vc_custom_1411468502120{padding-top: 80px !important;padding-bottom: 80px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="page page-id-1564 page-template-default  csbody body_header_normal wpb-js-composer js-comp-ver-4.6.2 vc_responsive">
+    	<div id="wrapper">
+		<div class="header-wrapper">
+    		
+<div class="header header-v1 cshero-logo-left ">
+        <header id="header-top" >
+        <div class="container">
+            <div class="row">
+                <div class="header-top clearfix">
+                                                                            </div>
+            </div>
+        </div>
+    </header>
+        <header id="cshero-header" class="" style="background-color:rgba(255, 255, 255, 1);">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <a href="http://lastrada-brno.cz" style="margin:0px;">
+                        <img src="http://lastrada-brno.cz/wp-content/uploads/2015/12/Logo_la-strada-new.png" alt="Lastrada" class="normal-logo logo-v1"/>
+                    </a>
+                </div>
+                <div id="menu" class="cs_mega_menu main-menu col-xs-9 col-sm-9 col-md-9 col-lg-9 cs_menu_position_right">
+                    <div class="main-menu-content cshero-menu-dropdown clearfix nav-menu cshero-mobile">
+                    <ul class="cshero-dropdown main-menu"><li id="menu-item-1417" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1417" data-depth="0"><a href="http://lastrada-brno.cz/"><span class="menu-title">Úvod</span></a></li>
+<li id="menu-item-2076" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children no_group menu-item-2076" data-depth="0"><a href="http://lastrada-brno.cz/o-nas/"><span class="menu-title">O nás</span></a>
+<ul class='standar-dropdown standard autodrop_submenu sub-menu' style="width:200px;">
+	<li id="menu-item-2369" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2369" data-depth="1"><a href="http://lastrada-brno.cz/novinky/"><span class="menu-title">Novinky</span></a></li>
+	<li id="menu-item-2226" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2226" data-depth="1"><a href="http://lastrada-brno.cz/darkovy-poukaz/"><span class="menu-title">Dárkový poukaz</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1494" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1494" data-depth="0"><a href="http://lastrada-brno.cz/galerie/"><span class="menu-title">Galerie</span></a></li>
+<li id="menu-item-2015" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no_group menu-item-2015" data-depth="0"><a href="#"><span class="menu-title">Menu</span></a>
+<ul class='standar-dropdown standard autodrop_submenu sub-menu' style="width:200px;">
+	<li id="menu-item-2481" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2481" data-depth="1"><a href="http://lastrada-brno.cz/aktualni-nabidka/"><span class="menu-title">Aktuální nabídka</span></a></li>
+	<li id="menu-item-1556" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1556" data-depth="1"><a href="http://lastrada-brno.cz/jidelni-listek/"><span class="menu-title">Jídelní lístek</span></a></li>
+	<li id="menu-item-1555" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1555" data-depth="1"><a href="http://lastrada-brno.cz/jacket-potatos/"><span class="menu-title">Jacket potatos</span></a></li>
+	<li id="menu-item-1563" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1563" data-depth="1"><a href="http://lastrada-brno.cz/nabidka-pro-vegany/"><span class="menu-title">Nabídka pro vegany</span></a></li>
+	<li id="menu-item-2016" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2016" data-depth="1"><a href="http://lastrada-brno.cz/pizza/"><span class="menu-title">Pizza</span></a></li>
+	<li id="menu-item-1557" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1557" data-depth="1"><a href="http://lastrada-brno.cz/napojovy-listek/"><span class="menu-title">Nápojový lístek</span></a></li>
+	<li id="menu-item-1559" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1559" data-depth="1"><a href="http://lastrada-brno.cz/vinny-listek/"><span class="menu-title">Vinný lístek</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1568" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1564 current_page_item no_group menu-item-1568" data-depth="0"><a href="http://lastrada-brno.cz/poledni-menu/"><span class="menu-title">Polední menu</span></a></li>
+<li id="menu-item-2681" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2681" data-depth="0"><a target="_blank" href="http://pizza-taxi.cz"><span class="menu-title">Rozvoz</span></a></li>
+<li id="menu-item-1422" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1422" data-depth="0"><a href="http://lastrada-brno.cz/rezervace/"><span class="menu-title">Rezervace</span></a></li>
+<li id="menu-item-1459" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1459" data-depth="0"><a href="http://lastrada-brno.cz/kontakt/"><span class="menu-title">Kontakt</span></a></li>
+</ul>                    </div>
+                </div>
+                                <button type="button" class="btn-navbar navbar-toggle" data-toggle="collapse" data-target="#cshero-main-menu-mobile"><i class="fa fa-align-justify"></i></button>
+                <div id="cshero-main-menu-mobile" class="collapse navbar-collapse cshero-mmenu"></div>
+            </div>
+        </div>
+    </header>
+</div>
+
+    <header id="header-sticky" class="sticky-header cshero-logo-left ">
+        <div class="container">
+            <div class="row">
+                <div class="cshero-logo logo-sticky col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <a href="http://lastrada-brno.cz">
+                        <img src="http://lastrada-brno.cz/wp-content/uploads/2015/11/logo_menu_male.png" alt="Lastrada" class="sticky-logo" />
+                    </a>
+                </div>
+                <div class="sticky-menu col-xs-9 col-sm-9 col-md-9 col-lg-9 cs_menu_position_right">
+                    <nav id="sticky-nav-wrap" class="cs_mega_menu nav-holder cshero-menu-dropdown cshero-mobile">
+                    <ul class="cshero-dropdown main-menu sticky-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1417" data-depth="0"><a href="http://lastrada-brno.cz/"><span class="menu-title">Úvod</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children no_group menu-item-2076" data-depth="0"><a href="http://lastrada-brno.cz/o-nas/"><span class="menu-title">O nás</span></a>
+<ul class='standar-dropdown standard autodrop_submenu sub-menu' style="width:200px;">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2369" data-depth="1"><a href="http://lastrada-brno.cz/novinky/"><span class="menu-title">Novinky</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2226" data-depth="1"><a href="http://lastrada-brno.cz/darkovy-poukaz/"><span class="menu-title">Dárkový poukaz</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1494" data-depth="0"><a href="http://lastrada-brno.cz/galerie/"><span class="menu-title">Galerie</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no_group menu-item-2015" data-depth="0"><a href="#"><span class="menu-title">Menu</span></a>
+<ul class='standar-dropdown standard autodrop_submenu sub-menu' style="width:200px;">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2481" data-depth="1"><a href="http://lastrada-brno.cz/aktualni-nabidka/"><span class="menu-title">Aktuální nabídka</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1556" data-depth="1"><a href="http://lastrada-brno.cz/jidelni-listek/"><span class="menu-title">Jídelní lístek</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1555" data-depth="1"><a href="http://lastrada-brno.cz/jacket-potatos/"><span class="menu-title">Jacket potatos</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1563" data-depth="1"><a href="http://lastrada-brno.cz/nabidka-pro-vegany/"><span class="menu-title">Nabídka pro vegany</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2016" data-depth="1"><a href="http://lastrada-brno.cz/pizza/"><span class="menu-title">Pizza</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1557" data-depth="1"><a href="http://lastrada-brno.cz/napojovy-listek/"><span class="menu-title">Nápojový lístek</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1559" data-depth="1"><a href="http://lastrada-brno.cz/vinny-listek/"><span class="menu-title">Vinný lístek</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1564 current_page_item no_group menu-item-1568" data-depth="0"><a href="http://lastrada-brno.cz/poledni-menu/"><span class="menu-title">Polední menu</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2681" data-depth="0"><a target="_blank" href="http://pizza-taxi.cz"><span class="menu-title">Rozvoz</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1422" data-depth="0"><a href="http://lastrada-brno.cz/rezervace/"><span class="menu-title">Rezervace</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1459" data-depth="0"><a href="http://lastrada-brno.cz/kontakt/"><span class="menu-title">Kontakt</span></a></li>
+</ul>                    </nav>
+                </div>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target="#cshero-sticky-menu-mobile"><i class="fa fa-align-justify"></i></button>
+                <div id="cshero-sticky-menu-mobile" class="collapse navbar-collapse cshero-mmenu"></div>
+            </div>
+        </div>
+    </header>
+		</div>
+		    				<div id="primary" class="content-area">
+        <div class="no-container">
+            <div class="row">
+                            	                <div class="content-wrap col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <main id="main" class="site-main" role="main">
+						<div class="sidebar-custom-button-wrap">
+													</div>
+                        
+                            <article id="post-1564" class="post-1564 page type-page status-publish hentry">
+		<div class="entry-content">
+		<div class="ww-custom wpb_row clearfix vc_row-fluid row-effect-backgound cs-row-fullwidth-wrap vc_custom_1448547150173"><div class="effect-backgound-top"><span></span></div><div class="effect-backgound-bottom"><span></span></div><div class="ww-parallax-bg" style="background:#000000 ; opacity :0.6;"></div><div class="no-container cs-row-fullwidth stripe-video-content " >
+	<div class="vc_col-sm-12 wpb_column vc_column_container  " >
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h1 style="text-align: center; padding-bottom: 15px;">Polední menu</h1>
+<p style="text-align: center; color: #ddd; font-size: 24px;">Každý den pro vás připravujeme čtyří druhy poledního menu z čerstvých surovin</p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+</div></div><div class="wpb_row clearfix vc_row-fluid cs-row-container-wrap vc_custom_1411468502120"><div class="ww-parallax-bg" style="background:#FFF ; opacity :0;"></div><div class="container cs-row-container stripe-video-content " ><div class="row">
+	<div class="vc_col-sm-12 wpb_column vc_column_container  " >
+		<div class="wpb_wrapper">
+			
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: left; color: #000; font-size: 16px;">Polední menu ke stažení: <a href="http://lastrada-brno.cz/wp-content/uploads/2015/11/25.6.-29.6.2018.pdf" target="_blank">25.6.-29.6.2018</a></p>
+<p style="text-align: left; color: #000; font-size: 16px;">Menu č.: 1     99Kč     Menu č.: 2, 3    109Kč    Menu č.: 4      119Kč</p>
+<p style="text-align: left; color: #000; font-size: 16px;">(cena menu je včetně polévky)</p>
+<div id="zvyhodnene">
+<p>&nbsp;</p>
+</div>
+<p>PONDĚLÍ  Thajská kuřecí</p>
+<p>1.Kuře pečené v kysaném zelí a paprikové omáčce, krupicové noky</p>
+<p>2.Míchaný salát se slaninou, sýrem gouda a pomerančem, medovo-hořčičný dressing</p>
+<p>3.Pizza dle výběru ze 4 druhů, viz níže      (bezlepková varianta +20Kč)</p>
+<p>4.Burritos s vepřovým masem, trhaným salátem a pikantním dressingem</p>
+<p>&nbsp;</p>
+<p>ÚTERÝ   Špenátová se zakysanou smetanou</p>
+<p>1.Brokolicové placičky s uzeným masem a bylinkami, bramborová kaše</p>
+<p>2.Míchaný salát se slaninou, sýrem gouda a pomerančem, medovo-hořčičný dressing</p>
+<p>3.Pizza dle výběru ze 4 druhů, viz níže      (bezlepková varianta +20Kč)</p>
+<p>4.Kuřecí prsa plněná nivou, pancettou a olivami, hranolky, barbecue dip</p>
+<p>&nbsp;</p>
+<p>STŘEDA    Dršťková z hlívy ústřičné</p>
+<p>1.Penne Prosciutto e Mais (šunka, kukuřice, jarní cibulka, smetana)</p>
+<p>2.Míchaný salát se slaninou, sýrem gouda a pomerančem, medovo-hořčičný dressing</p>
+<p>3.Pizza dle výběru ze 4 druhů, viz níže      (bezlepková varianta +20Kč)</p>
+<p>4.Steak z panenky s grilovaným fenyklem a cherry rajčaty, vídeňský bramborový salát</p>
+<p>&nbsp;</p>
+<p>ČTVRTEK   Hovězí vývar s nudlemi, zeleninou a vejcem</p>
+<p>1.Vepřová kotleta na houbách, rizoto arborio</p>
+<p>2.Míchaný salát se slaninou, sýrem gouda a pomerančem, medovo-hořčičný dressing</p>
+<p>3.Pizza dle výběru ze 4 druhů, viz níže      (bezlepková varianta +20Kč)</p>
+<p>4.Krůtí stehenní plátek na hnízdě z artyčoků, cukety a čabajky, americký brambor s česnekem</p>
+<p>&nbsp;</p>
+<p>PÁTEK    Fazolačka s bramborem</p>
+<p>1.Pečená krkovička v pikantní zelenině s estragonem, šťouchaný brambor</p>
+<p>2.Míchaný salát se slaninou, sýrem gouda a pomerančem, medovo-hořčičný dressing</p>
+<p>3.Pizza dle výběru ze 4 druhů, viz níže      (bezlepková varianta +20Kč)</p>
+<p>4.Svíčková na smetaně, domácí houskový knedlík, brusinky</p>
+<p>&nbsp;</p>
+<p>Menu č.3         Pizza- výběr ze 4 druhů:</p>
+<p>3a. Pizza Vegan Spinaci (tomat. omáčka, vegan mozzarella, listový špenát, česnek)</p>
+<p>3b. Pizza Quattro Formaggi (tomat. omáčka, mozzarella, niva, hermelín, uzený sýr)</p>
+<p>3c. Pizza Mista (tomat. omáčka, mozzarella, šunka, kukuřice, kapie, nakládané cibulky)</p>
+<p>3d. Pizza Boscaiola (smetana, mozzarella, restované lesní houby, žampiony, pórek)</p>
+<p><span id="more-1564"></span></p>
+<p><!--more--></p>
+<p style="text-align: left; color: #000; font-size: 16px;"><strong>Využijte ZVÝHODNĚNÉ CENY po dobu (10:30 až 15:00) vydávání poledního menu!</strong></p>
+<div id="zvyhodnene">
+<p><strong>Zvýhodněná cena minerální vody a točeného piva 0,3l za 19Kč</strong></p>
+<p><strong>Zvýhodněná cena pizzy na odnos za 95Kč</strong><br />
+(cena je včetně menu boxu a platí při objednávce min. 2ks)<br />
+Doporučujeme objednávat dopředu telefonicky na tel. čísle 773 222 211</p>
+<p><strong>Odnos menu bez polévky! Cena včetně menu boxu!</strong><br />
+Menu 1 za 89Kč, menu 2, 3 za 99Kč, menu 4 za 109Kč</p>
+<p><strong>V nabídce 100% bezlepková jídla označená symbolem </strong><span class="celiajidlo"><strong>přeškrtnutého klasu</strong> (pouze v souboru pdf)</span><br />
+(u menu č.2 možnost objednání v bezlepkové variantě)</p>
+<p>Bezlepková pizza v době poledního menu +20Kč</p>
+<p>&nbsp;</p>
+</div>
+<p>Polední menu ke stažení   <a href="http://lastrada-brno.cz/wp-content/uploads/2015/11/25.6.-29.6.2018.pdf" target="_blank">25.6.-29.6.2018</a></p>
+
+		</div> 
+	</div> 
+		</div> 
+	</div> 
+</div></div></div>
+			</div><!-- .entry-content -->
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+                            
+                        
+                    </main><!-- #main -->
+                </div>
+                            	            </div>
+        </div>
+	</div><!-- #primary -->
+
+		</div>
+		<footer>
+		<div id="footer-top">
+	<div class="container">
+		<div class="row">
+			<div class="footer-top">
+				<div class='footer-top-1 col-xs-12 col-sm-6 col-md-3 col-lg-3'><div id="text-6" class="footer-widget-col widget_text">			<div class="textwidget"><img style="padding: 15px 0px 0px 0px;" src="/wp-content/uploads/2016/01/lastrada-footer.png" alt="La Strada" /></div>
+		<div style="clear:both;"></div></div></div><div class='footer-top-2 col-xs-12 col-sm-6 col-md-3 col-lg-3'></div><div class='footer-top-3 col-xs-12 col-sm-6 col-md-3 col-lg-3'><div id="text-28" class="footer-widget-col widget_text"><h3 class="wg-title"><span><span class='title-line'>KONTAKTNÍ</span> ÚDAJE</span></h3>			<div class="textwidget">Restaurace: +420 773 222 211<br />
+Restaurace: +420 549 240 005<br />
+Rezervace: rezervace@la-strada.cz<br />
+Email: info@lastrada-brno.cz<br />
+Rozvoz: +420 777 222 211<br />
+<br />
+Kounicova 53, Brno 602 00<br />
+(roh Kounicovy a Sokolské ulice, naproti stadionu Sokol)</div>
+		<div style="clear:both;"></div></div></div><div class='footer-top-4 col-xs-12 col-sm-6 col-md-3 col-lg-3'><div id="text-29" class="footer-widget-col widget_text"><h3 class="wg-title"><span><span class='title-line'>OTEVÍRACÍ</span> DOBA</span></h3>			<div class="textwidget">Pondělí - Čtvrtek 10:30 - 23:00<br />
+Pátek 10:30 - 24:00<br />
+Sobota 11:00 - 24:00<br />
+Neděle 11:00 - 23:00
+<br />
+<br />
+<br />
+<ul class="cs-contact-social unliststyle">
+	<li><a href="https://www.facebook.com/restaurace.brno.la.strada/?fref=ts" target="_blank">    		<i class="cs_icons   fa fa-facebook" style="">
+    		    	</i>
+        </a></li>
+	<li><a href="https://plus.google.com/112004348619144567211/about" target="_blank">    		<i class="cs_icons   fa fa-google" style="">
+    		    	</i>
+        </a></li>
+<li><a href="https://www.instagram.com/lastrada_brno/" target="_blank">    		<i class="cs_icons   fa fa-instagram" style="">
+    		    	</i>
+        </a></li>
+</ul></div>
+		<div style="clear:both;"></div></div></div>			</div>
+		</div>
+	</div>
+</div>
+<div id="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="footer-bottom">
+				<div class='footer-bottom-1 col-xs-12 col-sm-6 col-md-6 col-lg-6'><div id="text-27" class="slidingbar-widget-col widget_text">			<div class="textwidget">© Copyright 2015 LASTRADA. Vytvořílo: <a href="http://www.tretri.cz/" target="_blank">www.tretri.cz</a> </div>
+		<div style="clear:both;"></div></div></div><div class='footer-bottom-2 col-xs-12 col-sm-6 col-md-6 col-lg-6'><div id="nav_menu-2" class="slidingbar-widget-col widget_nav_menu"><div class="menu-menu-footer-container"><ul id="menu-menu-footer" class="menu"><li id="menu-item-1919" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1919" data-depth="0"><a href="http://lastrada-brno.cz/"><span class="menu-title">Úvod</span></a></li>
+<li id="menu-item-2075" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2075" data-depth="0"><a href="http://lastrada-brno.cz/o-nas/"><span class="menu-title">O nás</span></a></li>
+<li id="menu-item-2680" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-2680" data-depth="0"><a target="_blank" href="http://pizza-taxi.cz"><span class="menu-title">Rozvoz</span></a></li>
+<li id="menu-item-1922" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1922" data-depth="0"><a href="http://lastrada-brno.cz/rezervace/"><span class="menu-title">Rezervace</span></a></li>
+<li id="menu-item-1920" class="menu-item menu-item-type-post_type menu-item-object-page no_group menu-item-1920" data-depth="0"><a href="http://lastrada-brno.cz/kontakt/"><span class="menu-title">Kontakt</span></a></li>
+</ul></div><div style="clear:both;"></div></div></div>			</div>
+		</div>
+	</div>
+</div>
+						<a id="back_to_top" class="back_to_top">
+			<span class="go_up">
+				<i style="" class="fa fa-arrow-up"></i>
+			</span></a>
+				<div id="cs-debug-wrap" class="clearfix">
+                    </div>
+		<div id="cookie-law-info-bar"><span>Tento web používá k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte.<a href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >souhlasím</a></span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#ffffff","border_on":true,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/lastrada-brno.cz\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Odes\u00edl\u00e1m..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var nectarLove = {"ajaxurl":"http:\/\/lastrada-brno.cz\/wp-admin\/admin-ajax.php","postID":"1564","rooturl":"http:\/\/lastrada-brno.cz"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/themes/wp_nuvo/js/post_favorite.js?ver=1.0'></script>
+<script type='text/javascript' src='http://lastrada-brno.cz/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.6.2'></script>
+<script>var pltNewTabURLs = ["http:\/\/pizza-taxi.cz"];(function(){(function(e){var t;t=e.jQueryWP||e.jQuery;return t(function(e){return typeof e.fn.on=="function"?e("body").on("click","a",function(t){var n;n=e(this);if(e.inArray(n.attr("href"),pltNewTabURLs)>-1)return n.attr("target","_blank")}):typeof console!="undefined"&&console!==null?console.log("Page Links To: Some other code has overridden the WordPress copy of jQuery. This is bad. Because of this, Page Links To cannot open links in a new window."):void 0})})(window)}).call(this);</script>		</footer>
+	</body>
+</html>
